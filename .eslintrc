@@ -1,19 +1,29 @@
 {
   "extends": "airbnb-base/legacy",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 6,
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false
   },
   "rules": {
     "operator-linebreak": [
       "error",
       "after",
-      { "overrides": { "?": "ignore", ":": "ignore" } }
+      {
+        "overrides": {
+          "?": "ignore",
+          ":": "ignore"
+        }
+      }
     ],
     "func-names": "off",
     "no-param-reassign": "off",
     "default-case": "off",
-    "comma-dangle": ["error", "always-multiline"],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
     "consistent-return": "off",
     "new-cap": "off",
     "no-underscore-dangle": "off",
@@ -21,7 +31,10 @@
     "no-new": "off",
     "global-require": "off",
     "no-control-regex": "off",
-    "wrap-iife": ["error", "outside"],
+    "wrap-iife": [
+      "error",
+      "outside"
+    ],
     "no-mixed-operators": 0,
     "no-plusplus": 0,
     "no-bitwise": 0,

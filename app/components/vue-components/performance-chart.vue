@@ -35,7 +35,10 @@ export default {
 
   computed: {
     chartData() {
-      return this.$store.getters["performance/performanceList"];
+      return (
+        this.$store.getters["performance/performanceListFilter"] ||
+        this.$store.getters["performance/performanceList"]
+      );
     },
     initOptions() {
       return {
