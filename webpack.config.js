@@ -26,6 +26,7 @@ module.exports = {
   devServer: {
     static: "./dist",
     hot: true,
+    historyApiFallback: true,
   },
   output: {
     filename: "[name].bundle.js",
