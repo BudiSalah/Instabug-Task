@@ -20,3 +20,5 @@ Todo:
   [+] Req #4: 404 Page in using ui-router (Angularjs)
     [+] Create a not-found page with vuejs, as shown on the 'about' page.
     [+] To handle unknown routes, use ui-route, which should redirect to the not found page you just created.
+
+  [] Req #5: Style the Employees table
