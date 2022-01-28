@@ -15,4 +15,4 @@ Todo:
     [+] Integrate the built vue search component into the Angularjs 'home-page' using ngVue (you can refer to about page as it has same logic)
     [] When we modify the filter inputs, we should see the changes reflected in the page url, so we can utilise the url to get the same filtering results every time.
     [] When loading more pages, the results should be highlighted
-    [] Add a reset button to the filter inputs to clear them.
+    [+] Add a reset button to the filter inputs to clear them.
