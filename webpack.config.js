@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)/,
-        exclude: [/vue-components|views/],
+        exclude: [/vue-components|views|pages/],
         use: [
           {
             loader: "file-loader",
@@ -95,7 +95,7 @@ module.exports = {
       // AND `<style lang="scss">` blocks in `.vue` files
       {
         test: /\.scss$/,
-        include: [/vue-components|views/],
+        include: [/vue-components|views|pages/],
         use: ["vue-style-loader", "css-loader", "sass-loader"],
       },
     ],

@@ -1,4 +1,5 @@
-angular.module('appModule')
+angular
+  .module('appModule')
   .config(($locationProvider) => {
     $locationProvider.html5Mode({
       enabled: true,
@@ -17,5 +18,10 @@ angular.module('appModule')
         name: 'team-performance',
         url: '/team-performance',
         template: '<v-performance-page></v-performance-page>',
+      })
+      .state({
+        name: '404',
+        url: '*path',
+        template: '<fof-page></fof-page>',
       });
   });
