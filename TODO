@@ -16,3 +16,7 @@ Todo:
     [+] When we modify the filter inputs, we should see the changes reflected in the page url, so we can utilise the url to get the same filtering results every time.
     [+] When loading more pages, the results should be highlighted
     [+] Add a reset button to the filter inputs to clear them.
+
+  [] Req #4: 404 Page in using ui-router (Angularjs)
+    [] Create a not-found page with vuejs, as shown on the 'about' page.
+    [] To handle unknown routes, use ui-route, which should redirect to the not found page you just created.
