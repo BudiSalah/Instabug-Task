@@ -1,7 +1,7 @@
 /* eslint-disable radix */
 angular.module('appModule').controller('homeController', homePageController);
 
-function homePageController(Employees, $rootScope) {
+function homePageController(Employees, $rootScope, $location) {
   const homePageVm = this;
   homePageVm.employees = [];
   homePageVm.loading = true;
@@ -49,6 +49,8 @@ function homePageController(Employees, $rootScope) {
 
   homePageVm.filtersEmployees = function (searchText) {
     const filterRegex = new RegExp(`(${searchText})`, 'i');
+
+    $location.search('q', searchText);
     $rootScope.$broadcast('broadcast-employees', filterRegex);
   };
 }

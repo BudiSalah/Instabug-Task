@@ -32,6 +32,16 @@ export default {
       this.$emit("emit-filter", this.filtersInput);
     },
   },
+  mounted() {
+    const queries = new URLSearchParams(window.location.search);
+    const searchQuery = queries.get("q");
+
+    searchQuery &&
+      setTimeout(() => {
+        this.filtersInput = searchQuery;
+        this.$emit("emit-filter", searchQuery);
+      }, 1000);
+  },
 };
 </script>
 
