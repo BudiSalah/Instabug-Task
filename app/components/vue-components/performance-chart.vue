@@ -98,6 +98,30 @@ export default {
             },
           },
         ],
+        visualMap: {
+          top: 50,
+          right: 10,
+          pieces: [
+            {
+              gt: 0,
+              lt: 50,
+              color: "#f4674c",
+            },
+            {
+              gte: 50,
+              lt: 80,
+              color: "#fbdb10",
+            },
+            {
+              gte: 80,
+              lte: 100,
+              color: "#01984f",
+            },
+          ],
+          outOfRange: {
+            color: "#999",
+          },
+        },
       };
     },
 
