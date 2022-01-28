@@ -43,6 +43,7 @@ function homePageController(Employees, $rootScope) {
       .finally(() => {
         homePageVm.loading = false;
         homePageVm.showLoadBtn();
+        $rootScope.$broadcast('broadcast-loadmore', homePageVm.employees);
       });
   };
 
