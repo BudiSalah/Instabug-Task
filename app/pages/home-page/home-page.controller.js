@@ -1,7 +1,7 @@
 /* eslint-disable radix */
 angular.module('appModule').controller('homeController', homePageController);
 
-function homePageController(Employees) {
+function homePageController(Employees, $rootScope) {
   const homePageVm = this;
   homePageVm.employees = [];
   homePageVm.loading = true;
@@ -11,9 +11,7 @@ function homePageController(Employees) {
     return parseInt(homePageVm.currentPage) <= parseInt(homePageVm.pages);
   };
 
-  activate();
-
-  function activate() {
+  (function activate() {
     Employees.getEmployees()
       .then(({ data }) => {
         homePageVm.employees = homePageVm.employees.concat(data.employees);
@@ -28,7 +26,7 @@ function homePageController(Employees) {
         homePageVm.loading = false;
         homePageVm.showLoadBtn();
       });
-  }
+  }());
 
   homePageVm.loadMoreHandler = function () {
     homePageVm.loading = true;
@@ -46,5 +44,10 @@ function homePageController(Employees) {
         homePageVm.loading = false;
         homePageVm.showLoadBtn();
       });
+  };
+
+  homePageVm.filtersEmployees = function (searchText) {
+    const filterRegex = new RegExp(`(${searchText})`, 'i');
+    $rootScope.$broadcast('broadcast-employees', filterRegex);
   };
 }

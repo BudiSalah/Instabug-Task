@@ -4,6 +4,7 @@
     "@uirouter/angularjs": "^1.0.30",
     "@vue/composition-api": "^1.4.4",
     "angular": "^1.8.2",
+    "angular-sanitize": "^1.8.2",
     "axios": "^0.25.0",
     "echarts": "^5.2.2",
     "element-ui": "^2.15.6",
