@@ -1,8 +1,8 @@
 
 Todo:
-  [] Req #1: Chart Edits (VueJS)
+  [+] Req #1: Chart Edits (VueJS)
     [+] performance api with vuex and axios
     [+] date range filter
     [-] filter component unit tests
-    [] chart line custom design
+    [+] chart line custom design
 

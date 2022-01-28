@@ -58,7 +58,10 @@ export default {
           transitionDuration: 0,
           confine: false,
           hideDelay: 0,
-          padding: 0,
+          padding: 15,
+          textStyle: { color: "#fff" },
+          backgroundColor: "#16253f",
+          extraCssText: "text-align: center;",
         },
         grid: {
           left: "30px",
@@ -88,6 +91,7 @@ export default {
         },
         series: [
           {
+            name: "Team Performance Index:",
             data: this.yAxisData,
             type: "line",
             symbol: "circle",
