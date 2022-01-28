@@ -5,9 +5,18 @@
 
   <employees-list employees-list="homePageVm.employees"></employees-list>
 
-  <div class="c-dashboard__footer">
-    <button class="c-button">
+  <div ng-if="homePageVm.showLoadBtn()" class="c-dashboard__footer">
+    <button class="c-button {{homePageVm.loading && 'loading'}}" ng-click="homePageVm.loadMoreHandler()">
       Load More
+
+      <i ng-if="homePageVm.loading">⏳</i>
     </button>
   </div>
+
+  <style>
+    .loading {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  </style>
 </div>

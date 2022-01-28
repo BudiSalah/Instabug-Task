@@ -7,8 +7,9 @@ function EmployeesService($http) {
     return $http.get(employeesUrl);
   };
 
-  const loadMoreEmployees = () => {
-    // [Load more empolyess logic goes here]
+  const loadMoreEmployees = (page) => {
+    const employeesUrl = `https://fe-task.getsandbox.com/employees?page=${page}`;
+    return $http.get(employeesUrl);
   };
 
   return {
