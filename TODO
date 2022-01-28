@@ -6,3 +6,6 @@ Todo:
     [-] filter component unit tests
     [+] chart line custom design
 
+  [] Req #2: Load more button (Angularjs)
+    [] While loading data, add a loader indicator to the button and disable it to prevent multiple clicks
+    [] When there are no more pages to load, hide the button
