@@ -22,3 +22,7 @@ Todo:
     [+] To handle unknown routes, use ui-route, which should redirect to the not found page you just created.
 
   [+] Req #5: Style the Employees table
+
+  [-] BOUNS #1: cypress
+
+  [] BOUNS #2: Create build command to generate dist folder
