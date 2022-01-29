@@ -25,4 +25,4 @@ Todo:
 
   [-] BOUNS #1: cypress
 
-  [] BOUNS #2: Create build command to generate dist folder
+  [+] BOUNS #2: Create build command to generate dist folder
