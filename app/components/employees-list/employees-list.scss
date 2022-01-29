@@ -1,0 +1,35 @@
+.c-users-list {
+  &__header {
+    color: #fff;
+    background-color: #37304b !important;
+    text-transform: capitalize;
+  }
+
+  &__main-header {
+    padding: 10px 5px;
+
+    &--about {
+      width: 450px;
+    }
+  }
+
+  &__body {
+    &:nth-child(odd) {
+      background-color: #eee;
+    }
+  }
+
+  &__main-info {
+    color: #37304b;
+  }
+
+  &__avatar {
+    color: #33f;
+  }
+
+  &__cell {
+    &--center {
+      text-align: center;
+    }
+  }
+}

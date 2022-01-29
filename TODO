@@ -21,4 +21,4 @@ Todo:
     [+] Create a not-found page with vuejs, as shown on the 'about' page.
     [+] To handle unknown routes, use ui-route, which should redirect to the not found page you just created.
 
-  [] Req #5: Style the Employees table
+  [+] Req #5: Style the Employees table
